@@ -23,8 +23,10 @@
   div.gallery {
     margin: auto;
     border: 10px solid #ccc;
-    float:left;
-    width:auto;
+    justify-content: center;
+    width:400px;
+    float: left;
+    margin-left: 42px;
   }
   /*Estilo de la imagen de la portada o página inicial del proyecto*/
   .gallery-port{
@@ -38,7 +40,7 @@
   }
   
   div.gallery img {
-    width: 390px;
+    width: 400px;
     height: auto;
   }
   
