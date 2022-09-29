@@ -16,8 +16,9 @@
     margin-top: -73px;
   } */
   /*Estilos del menú hamburguesa*/
-  #mmenu-header{
+  #menu-header{
     width: 900px;
+    margin-top: 10px;
   }
   
   div.gallery {
@@ -47,6 +48,7 @@
   div.desc {
     padding: 15px;
     text-align: center;
+    background-color: rgba(212, 183, 18, 0.7);
   }
   body{
     background-color: rgb(225, 220, 230);
@@ -54,7 +56,7 @@
   }
   #rs { 
     display: block;
-    margin-top: 0.67em;
+    /* margin-top: 0.67em; */
     margin-bottom: 0.67em;
     margin-left: 0;
     margin-right: 0;
@@ -69,16 +71,16 @@
     font-weight: bold;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size:40px;
-    color:white;
+    color:rgb(206, 33, 33);
   }
   h1{
     font-family:helvetica;
     font-size: 80px;
     
   }
-  .button{
+  button{
     border-radius:20px;
-    background: #FD9D0D;
-    width: 400px;
+    background: #479668;
+    width: 350px;
   }
     
