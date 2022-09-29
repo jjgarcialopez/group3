@@ -48,7 +48,8 @@ header {
       cursor: pointer;      
       width: 600px;
       height: 80px;
-      font-weight: bold;     
+      font-weight: bold;   
+      margin-top: 32px;  
 
     }
     /*aqui finalizan los estilos del boton*/
