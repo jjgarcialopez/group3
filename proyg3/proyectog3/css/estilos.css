@@ -70,7 +70,7 @@ header {
        
       }
       h2{
-        color: antiquewhite;
+        color: rgb(26, 25, 23);
         transition-property: opacity, left, top, height;
         transition-duration: 3s, 5s;
       }
