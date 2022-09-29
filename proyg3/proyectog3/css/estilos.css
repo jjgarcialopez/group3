@@ -61,7 +61,7 @@ header {
       #descripcion{
         align="right";
         /* color: #2667FF */
-        font-size: 250%;
+        font-size: 30px;
         font-family:"Latin Modern Roman";
         text-align: justify;
         background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
