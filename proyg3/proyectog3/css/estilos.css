@@ -119,6 +119,7 @@ header {
         height: 250px;
         float: left;
         padding: 25px;
+        border-radius: 50%;
         
       }
       .volver{
