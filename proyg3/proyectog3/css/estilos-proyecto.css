@@ -5,22 +5,45 @@
   background: lightyellow;
   
 }
+/*Estilos para el header y los botones de navegación*/
+.topMenu {
+  width: 90%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  list-style-type: none;
+  background-color: var(--color-fondo-titulo);
+  overflow: hidden;
+  height: 150px;
+  display: inline-flex; /* Para hacer que el elemento tan solo ocupe lo que sus hijos marque */
+  border-radius: 30px;
+  align-items: center; /* Para alinear items flexibles respecto al eje secundario */
+  justify-content: space-between;
+  width:100%;
+}
+
+.topMenu p {
+  font-size: 50px;
+  color: darkblue;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.topMenu button {
+  border-radius: 8px;
+  border-color: black;
+  background-color: rgb(195, 216, 255);
+  text-decoration: black;
+  font-size: 17px;
+  height: 90px;
+  width: 500px;
+  margin-right: 40px;
+}
+/*Hasta aqui son los estilos de los botones*/
 /*Estilo para el titulo principal*/
-/* .titulo{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #FD9D0D;
-    margin-top: -73px;
-  } */
-  /*Estilos del menú hamburguesa*/
-  #menu-header{
-    width: 900px;
-    margin-top: 10px;
-  }
-  
+
+#subtitle{
+  text-align: center;
+}
   div.gallery {
     margin: auto;
     border: 10px solid #ccc;
@@ -31,9 +54,12 @@
   }
   /*Estilo de la imagen de la portada o página inicial del proyecto*/
   .gallery-port{
-    display: flex;
+    
     justify-content: center;
     align-items: center;
+    border: 10px solid #ccc;
+    padding:10px;
+    
   }
   
   div.gallery:hover {
