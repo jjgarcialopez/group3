@@ -87,11 +87,8 @@
   align-items: center;
   margin-top:200px;
   border-radius: 30px;
-       
-  
-
 }
-
+/*Estilos para la descripcion de cada desarrollador*/
       .perfiles_desarrollo{
         color: rgb(233, 223, 223);
         text-align: center;
@@ -133,11 +130,7 @@
         padding: 25px;
         border-radius: 50%;        
       }
-    
-
-      
-     
-      
+        
       div.reset {
         clear: both;
       }
@@ -148,38 +141,15 @@
       }
       
       /* Aqui finalizan los estilos de los perfiles */
+
       /*estilos del footer*/
       #foot{
         color: #020024;
         font-size: 1.5em;
         text-align: center;
+        /*Hasta aqui estilos del footer*/
       }
-      .padre {
-        margin-top: 12px;
-        height:100px;
-        background-color:var( --color-fondo-titulo);
-        display: flex;
-        margin: auto;
-        width: 98%;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: center;      
-        
-        
-      }
-      .Hijo {
-        display: flex;
-        flex-direction: row;
-        
-       
-      }
-      #hijo div{
-        width:60px;
-        height:60px;
-        padding:5px;
-        columns: 3;
-        text-align: center;      
-      }
+      
       :root{
         --fondo-textos:#449;
         --color-letra:#fff;
@@ -191,127 +161,169 @@
   body{
     margin: 0;
     padding: 0;
-    background-color: #479668;
+    background-color: #97939c;
     width: 100%;
+  } 
+  .topMenu {
+    width: 90%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    list-style-type: none;
+    background-color: var(--color-fondo-titulo);
+    overflow: hidden;
+    height: 150px;
+    display: inline-flex; /* Para hacer que el elemento tan solo ocupe lo que sus hijos marque */
+    border-radius: 30px;
+    align-items: center; /* Para alinear items flexibles respecto al eje secundario */
+    justify-content: space-between;
+    width:100%;
   }
-  .padre {
-    margin-top: 20px;
+  
+  .topMenu p {
+    font-size: 1.5em;
+    color: darkblue;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .topMenu button {
+    border-radius: 8px;
+    border-color: black;
+    background-color: rgb(195, 216, 255);
+    text-decoration: black;
+    font-size: 1em;
+    height: 50px;
+    width: 15em;
+    margin-right: 40px;
+  }
+  .equipo{
+    margin-top: 12px;
     height:100px;
-    background-color: #feb139;
+    background-color:var(--color-fondo-titulo);
     display: flex;
     margin: auto;
-    width: 95%;
-    flex-flow:column;
-    text-align: center;             
-    justify-content:center;
-    align-items: center; 
-    justify-items: center;  
-         
-   }
-  .padre h1{
-    font-size: 1.2em;
-    text-align: center;
-    margin-left: 150px;
-   
-    margin-right: 7em;
-  }
-  .padre button{
-    margin-bottom: 20px;
-   
-  }
-    h1{
-    text-align:center; 
-    font-size: 20px; 
-    text-shadow: 7px 4px 5px rgb(178, 178, 204);
-  }
-  #descripcion{
-    font-size: 20px;
-    font-weight:200;
-    /* background-color:var(--fondo-textos); */
-    background-color: rgb(36, 153, 94);
-    color: var( --color-letra);
-  }
-  .perfiles_desarrollo{
-    /* color: rgb(233, 223, 223); */
-    text-align: center;
-    background-color:var(--fondo-textos);
-    color: var( --color-letra);
-    display: flex;
-    flex-direction: column;
+    width: 98%;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    margin-top:550px;
-    margin-left: 20px;
-    height: 80px;
-    width: 350px;
+    margin-top:950px;
+    border-radius: 30px;        
+    }
+    #descripcion{
+          
+      font-size: 2em;
+      font-family:"Latin Modern Roman";
+      text-align: justify;       
+      padding: 45px;
+      height: 200px;      
+    }
+  }
+  img.mediana{
+    width: 200px;
+    height: 180px;
+    border: solid 1px;
     
   }
   .mis-perfiles{
-    margin-top: 65%;
-    font-size:1em;
+    font-size:2.2em;
     color: #fff;
   }
+  div.perfiles {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #449;
+    color: #fff;
+    padding: 15px;
+  }
+  
+  
+  
+  div.perfiles img.derecha {
+    width: 200px;
+    height: 250px;
+    float: left;
+    padding: 25px;
+    border-radius: 50%;        
+  }
     
-      
-    }
+  div.reset {
+    clear: both;
+  }
+  .names{
+    color: rgb(13, 13, 15);
+    text-align: center;
+    text-align:center; font-size: 1.9em; text-shadow: 7px 4px 5px rgb(178, 178, 204);
+  }
+  
+  
     /*HASTA AQUI ES PARA MOVIL*/
-    /*Estilos para tablet*/
-    @media only screen and (max-width: 768px)  {
 
-    
-      header {
-        background: rgba(212, 183, 18, 0.7);
-        
+    /*Estilos para tablet*/
+    @media only screen and (min-width:415px) and (max-width: 768px)  {
+      body{
+        margin: 0;
+        padding: 0;
+        background-color: #d8ec23;
+        width: 100%;
+      } 
+      .topMenu {
+        width: 90%;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        list-style-type: none;
+        background-color: var(--color-fondo-titulo);
+        overflow: hidden;
+        height: 150px;
+        display: inline-flex; /* Para hacer que el elemento tan solo ocupe lo que sus hijos marque */
+        border-radius: 30px;
+        align-items: center; /* Para alinear items flexibles respecto al eje secundario */
+        justify-content: space-between;
+        width:100%;
+      }
+      
+      .topMenu p {
+        font-size: 1.5em;
+        color: darkblue;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      
+      .topMenu button {
+        border-radius: 8px;
+        border-color: black;
+        background-color: rgb(195, 216, 255);
+        text-decoration: black;
+        font-size: 1em;
+        height: 50px;
+        width: 15em;
+        margin-right: 40px;
+      }
+      .equipo{
+        margin-top: 12px;
+        height:100px;
+        background-color:var(--color-fondo-titulo);
+        display: flex;
+        margin: auto;
+        width: 98%;
+        flex-flow: row;
+        align-items: center;
+        margin-top:800px;
+        border-radius: 30px;        
         }
-        header h1{
-          text-align: center;
-          margin-top: 10px;
-        }
-        section h1{
-          font-size: 3em;
-          text-align: center;
-        }
-        .padre {
-          margin-top: 20px;
-          height:100px;
-          background-color: #feb139;
-          display: flex;
-          margin: auto;
-          width: 99%;
-          flex-flow: row wrap;
-          justify-content: space-between;
-          align-items: center;
-         
-          
-          
-        }
-        .Hijo {
-          display: flex;
-          flex-direction: row;
-                        
-        }
-        
-       
         #descripcion{
-          align="right";
-          /* color: #2667FF */
-          font-size: 1.5em;
+          
+          font-size: 2em;
           font-family:"Latin Modern Roman";
-          text-align: justify; 
-                        
+          text-align: justify;       
           padding: 45px;
-          height: 200px;
-         
+          height: 200px;      
         }
-        .mis-perfiles{
-          font-size:1.5em;
+        div.perfiles {
+          width: 95%;
+          margin: 20px auto;
+          background-color: #449;
           color: #fff;
-        }
-        #foot{
-          color: #020024;
-          font-size: 1.6em;
-          text-align: center;
-          margin-bottom: 50px;
+          padding: 60px;
         }
     }
     /*Hasta aqui son los estilos para tablet*/
