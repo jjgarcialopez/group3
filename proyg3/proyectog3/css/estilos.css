@@ -1,80 +1,49 @@
 /*Aqui inician los estilos */
-.padre {
-  margin-top: 20px;
-  height:100px;
-  background-color: #feb139;
-  display: flex;
-  margin: auto;
-  width: 100%;
-  flex-flow: row wrap;
+:root{
+  --color-fondo-titulo:rgb(115, 182, 115);
+}
+/*Estilos para el header y los botones de navegación*/
+.topMenu {
+  width: 90%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  list-style-type: none;
+  background-color: var(--color-fondo-titulo);
+  overflow: hidden;
+  height: 150px;
+  display: inline-flex; /* Para hacer que el elemento tan solo ocupe lo que sus hijos marque */
+  border-radius: 30px;
+  align-items: center; /* Para alinear items flexibles respecto al eje secundario */
   justify-content: space-between;
-  align-items: center;      
-  
-  
+  width:100%;
 }
 
-header {
-    background: rgba(212, 183, 18, 0.7);
-    
-    width: calc(100% - 50px);
-    position:relative;
-    z-index: 100;
-    height: 100px;
-    height: 150px;
-    text-align:right ;
-    margin-left: 10px;
-    margin-right: 20px;
-    display: flex;
-    }
-    header h1{
-      text-align: center;
-      margin-top: 10px;
-    }
-    /*estilo del container */
-    
-    .container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height:150px;
-    margin-top: 5px;   
-    justify-content:space-evenly;
-    }
-    
-    .container h1{
-      color: black;
-      font-size: 40px;
-      margin-left: 20px;
-      margin-right: 50px;
-    }
-    section h1{
-      text-align: center;
-      
-    }
+.topMenu p {
+  font-size: 50px;
+  color: darkblue;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-    /*Estilo para el titulo principal*/
-    .titulo{
-      width: 70%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align:center; font-size: 20px; text-shadow: 7px 4px 5px rgb(152, 177, 157);
-    }
+.topMenu button {
+  border-radius: 8px;
+  border-color: black;
+  background-color: rgb(195, 216, 255);
+  text-decoration: black;
+  font-size: 17px;
+  height: 90px;
+  width: 500px;
+  margin-right: 40px;
+}
+/*Hasta aqui son los estilos de los botones*/
+
+/*Estilo para el titulo principal de la página de presentación*/
     section h1{
-      font-size: 3em;
+      text-align: center;
+      margin-top: 70px;
+      font-size: 3em;      
     }
-    
-    /*Aqui se da estilo al boton que lleva al proyecto del grupo 3*/
-   
-    /*aqui finalizan los estilos del boton*/
-   /*Estilos de la seccion presentación*/
-      
-      p{
-        color: rgb(17, 17, 16);
-        Font-family: Cambria, Georgia, serif.;
-        font-size:30px;
-      }
+/*Estilos para la descripción del equipo*/   
       #descripcion{
         align="right";
         /* color: #2667FF */
@@ -82,25 +51,59 @@ header {
         font-family:"Latin Modern Roman";
         text-align: justify;       
         padding: 45px;
-        height: 200px;
+        height: 200px;      
+      }
+/* Hasta aqui Estilos para la descripción del equipo*/   
+.cabecera{
+  margin-top: 12px;
+  height:100px;
+  background-color:var(--color-fondo-titulo);
+  display: flex;
+  margin: auto;
+  width: 98%; 
+  align-items: center;
+  margin-top:20px; 
+}
+.cabecera h1{
+  margin: auto;
+}  
+.cabecera #btn1{
+  justify-content: left;
+} 
+.cabecera #btn2{
+  justify-content:right;
+}   
+
+/*eSTILOS PARA EL TITULO EQUIPO DE DESARROLLO*/
+.equipo{
+  margin-top: 12px;
+  height:100px;
+  background-color:var(--color-fondo-titulo);
+  display: flex;
+  margin: auto;
+  width: 98%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:200px;
+  border-radius: 30px;
        
-      }
-      /*h2{
-        color: rgb(26, 25, 23);
-        transition-property: opacity, left, top, height;
-        transition-duration: 3s, 5s;
-      }
-      
-      /* Aqui inician los estilos del area de los perfiles*/
+  
+
+}
+
       .perfiles_desarrollo{
         color: rgb(233, 223, 223);
         text-align: center;
-        background-color:#449;
+        background-color:var( --color-fondo-titulo);
         display: flex;
         flex-direction: column;
         align-items: center;
+        width:95%;
         justify-content: center;
         margin-top:250px;
+        margin-right:30%;
+        margin-left: 5%;
         
       }
       img.mediana{
@@ -110,7 +113,7 @@ header {
         
       }
       .mis-perfiles{
-        font-size:1em;
+        font-size:2em;
         color: #fff;
       }
       div.perfiles {
@@ -121,11 +124,7 @@ header {
         padding: 15px;
       }
       
-      div.perfiles img.izquierda {
-       width: 200px;
-        height: 180px;
-       
-      }
+      
       
       div.perfiles img.derecha {
         width: 200px;
@@ -136,14 +135,7 @@ header {
       }
     
 
-      .volver{
-        float:left;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 40px;
-        height: 40px;
-        font-weight: bold;  
-      }
+      
      
       
       div.reset {
@@ -165,7 +157,7 @@ header {
       .padre {
         margin-top: 12px;
         height:100px;
-        background-color: #feb139;
+        background-color:var( --color-fondo-titulo);
         display: flex;
         margin: auto;
         width: 98%;
