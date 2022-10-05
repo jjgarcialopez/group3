@@ -3,44 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <title>PRESENTACIÓN GRUPO 3</title>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="proyectog3/css/estilos.css">
+
   <link rel="icon" type="image/jpg" href="/proyectog3/grupo3/img/icons8-group-64.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <!-- <header>
-    <h1>BIENVENIDO A NUESTRO SITIO WEB SOMOS EL GRUPO</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Regresar a Default</a></li>
-        <li><a href="#">Visitar el proyecto</a></li>
-       
-      </ul>
-  </header> -->
 
-  
-  <header class="container">
-    <div class="volver"> <input type = "button" value =  "¡Regresar a Default!"  onclick = "history.back ()" ></div> 
-    <div class="titulo"><h1>BIENVENIDO A NUESTRO SITIO WEB SOMOS EL GRUPO 3</h1></div> 
-    <div>  <button class=" btn-proyecto" onclick="document.location='proyectog3/fastfoods.html'">VISITAR 
-    EL PROYECTO</button></div>
+  <div class="padre">
+   
+      <div class="hijo"><input type = "button" value =  "¡Regresar a Default!"  onclick = "history.back ()" ></div>
+      <div class="hijo"><h1>BIENVENIDO  GRUPO 3</h1></div>
+      <div class="hijo"><button id="contenedorHijo" onclick="document.location='proyectog3/fastfoods.html'">VISITAR EL PROYECTO</button></div>
     
- </header>
+</div>
 
-    <h1 style="text-align:center; font-size: 100px; text-shadow: 7px 4px 5px rgb(178, 178, 204);" >presentación del proyecto</h1>
-    <p id="descripcion">  <b> Somos el grupo número 3 y les damos la bienvenida a nuestro sitio web. Hemos desarrollado un proyecto  cuyo proposito es publicar en una página web todos los productos que ofrece un establecimiento de venta de comidas rápidas nuestro cliente  se denomina Al Carbón Fast Foods. Elestablecimiento comercial para comidas rápidas, tiene como objetivo permitir que los clientes puedan  acceder de manera  eficaz por medio de una página en internet  aprovechando el uso de las nuevas tecnologias de la infomación. <br>Nuestro al es poner al servicio todo el portafolio de productos comestibles y asi mismo contar con los canales virtuales para la venta y atención al cliente </b>
+  <section>
+
+    <h1>presentación del proyecto</h1>
+    <p id="descripcion">  Somos el grupo número 3 y les damos la bienvenida a nuestro sitio web. Hemos desarrollado un proyecto  cuyo proposito es publicar en una página web todos los productos que ofrece un establecimiento de venta de comidas rápidas nuestro cliente  se denomina Al Carbón Fast Foods. Elestablecimiento comercial para comidas rápidas, tiene como objetivo permitir que los clientes puedan  acceder de manera  eficaz por medio de una página en internet  aprovechando el uso de las nuevas tecnologias de la infomación. <br>Nuestro al es poner al servicio todo el portafolio de productos comestibles y asi mismo contar con los canales virtuales para la venta y atención al cliente
      </p>
  </section>
- <hr>
- <h2 id="desarrollo">EQUIPO DE DESARROLLO</h2>
- <hr>
-<h2 class="names">ERICK ANTONIO ANGEL BARLETAl</h2>
-
+ 
+ <div class="perfiles_desarrollo">
+  <hr>
+  <h2 id="desarrollo">EQUIPO DE DESARROLLO</h2>
+  <hr>
+ 
+</div>
+<h2 class="names">ERICK ANTONIO ANGEL BARLETA</h2>
 <div class="perfiles">
 
-       <img class="derecha" src="proyectog3/img/perfiles/erick.PNG">
+       <img class="derecha" src="proyectog3/img/perfiles/erick.PNG" style="height:200px ;>
         <p class="mis-perfiles">Tec. Gestión de Recursos Naturales, Ing. Ambiental, Especialización Producción In Vitro de Plantas y Orquídeas, defensor de derechos humanos bajo la comisión de DDHH Rodrigo Uprimny y defensor del medio ambiente bajo la organización internacional Climalab. Estudio digitación de datos con enfasis en desarrollo front end con el fin de crecer mis conocimientos en ese área e implementarlos a mis conocimientos sobre el medio ambiente y desarrollar herramientas que ayuden a la realización de trabajos en el campo de forma gratuita y eficaz. 
         </p>
 
@@ -48,7 +47,7 @@
   </div>
   <h2 class="names">DIANA FARLEY PORTOCARRERO</h2>
   <div class="perfiles">
-    <img class="derecha" src="proyectog3/img/perfiles//woman.jpg">
+    <img class="derecha" src="proyectog3/img/perfiles//woman.jpg" style="height:200px ;  ">
          <p class="mis-perfiles">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus culpa deleniti perferendis at, rerum soluta eaque, asperiores saepe adipisci aperiam qui eveniet doloribus. Eveniet praesentium illum vitae perspiciatis? Maiores possimus, quibusdam, sit at blanditiis tempore similique esse reprehenderit molestias, nesciunt a nostrum? Itaque harum enim consequatur similique, culpa possimus ipsum?</p>
     <div class="reset"></div>
   </div>
@@ -71,5 +70,4 @@
 <h2 id="foot">Kuepa 2022 <br>grupo 3 <br>
 poyecto de comidas rapidas al carbon fast foods</h2>
 </body>
-
 </html>
