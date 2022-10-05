@@ -1,14 +1,9 @@
 /*Aqui inician los estilos */
-Estilos del header
-*{
-  border: 2px solid brown;
-}
-main{
-  display: grid;
-}
+
 
 header {
     background: rgba(212, 183, 18, 0.7);
+    
     width: calc(100% - 50px);
     position:relative;
     z-index: 100;
@@ -40,6 +35,10 @@ header {
       margin-left: 20px;
       margin-right: 50px;
     }
+    section h1{
+      text-align: center;
+      
+    }
 
     /*Estilo para el titulo principal*/
     .titulo{
@@ -69,8 +68,7 @@ header {
         /* color: #2667FF */
         font-size: 40px;
         font-family:"Latin Modern Roman";
-        text-align: justify;
-       
+        text-align: justify;       
         padding: 45px;
         height: 200px;
        
@@ -153,15 +151,15 @@ header {
         text-align: center;
       }
       .padre {
+        margin-top: 12px;
         height:100px;
         background-color: #feb139;
         display: flex;
         margin: auto;
-        width: 550px;
+        width: 98%;
         flex-flow: row wrap;
         justify-content: space-between;
-        align-items: center;
-       
+        align-items: center;      
         
         
       }
@@ -181,13 +179,12 @@ header {
         
         
       }
-      
-      @media only screen and (max-width: 600px) {
-            
-       
-
-
-        h1{
+      /*Estilos para movil */
+      @media only screen and (max-width: 375px) {
+        body{
+          background-color: #479668;
+        }
+          h1{
           text-align:center; 
           font-size: 20px; 
           text-shadow: 7px 4px 5px rgb(178, 178, 204);
@@ -196,49 +193,110 @@ header {
           font-size: 20px;
           font-weight:200;
         }
-      }
-   .btn-proyecto {
-            background-color: #479668;/* Green */
-            border-radius: 12px;
-            color: rgb(15, 14, 14);
-            padding: 20px;
-            text-align: center;
-            align-content: center;
-            text-decoration: none;            
-           flex-direction: column;          
-            cursor: pointer;
-            margin-right: 10px;
-            margin-top: 30px;      
-            width: 100%;
-            height: 60px;           
-            font-weight:bold;   
+        .perfiles_desarrollo{
+          color: rgb(233, 223, 223);
+          text-align: center;
+          background-color:#449;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top:600px;
+          margin-left: 20px;
+          height: 80px;
+          width: 400px;
+          
+        }
            
-      }
-
-
-          /* .container {
-            <div class="w3-row">
-  <div class="w3-col w3-green w3-container" style="width:20%"><p>20%</p></div>
-  <div class="w3-col w3-blue w3-container" style="width:60%"><p>60%</p></div>
-  <div class="w3-col w3-red w3-container" style="width:20%"><p>20%</p></div>
-  </div 
-            }  */
-
-            .volver {
-              background-color: #479668;/* Green */
-              border-radius: 12px;
-              color: rgb(119, 29, 29);
-              padding: 20px;
-              text-align: center;
-              text-decoration: none;
-              display:inline ;
-              font-size: 30px;
-              margin-right: 20px;
-              cursor: pointer;      
-              width: 20%;
-              height: 40px;
-              font-weight: bold;   
-              margin-top: 32px;       
+            .padre {
+              margin-top: 20px;
+              height:100px;
+              background-color: #feb139;
+              display: flex;
+              margin: auto;
+              width: 95%;
+              flex-flow:column;
+              text-align: center;             
+              justify-content: space-between;
+              align-items: center;      
+              
+              
             }
-         
-      }     
+            .padre h1{
+              font-size: 1.8em;
+              text-align: center;
+              margin-right: 7em;
+            }
+            .padre button{
+              display: inline-block;
+            }
+            .Hijo{
+              display: flex;
+              flex-direction: row;
+             
+              
+             
+            }
+            #hijo div{
+              width:60px;
+              height:60px;
+              padding:5px;
+              columns: 3;
+              text-align: center;
+            
+            }
+          }
+          /*HASTA AQUI ES PARA MOVIL*/
+
+          
+          @media only screen and (max-width: 3000px) {
+            header {
+              background: rgba(212, 183, 18, 0.7);
+              
+              }
+              header h1{
+                text-align: center;
+                margin-top: 10px;
+              }
+              section h1{
+                font-size: 3em;
+                text-align: center;
+              }
+              .padre {
+                margin-top: 20px;
+                height:100px;
+                background-color: #feb139;
+                display: flex;
+                margin: auto;
+                width: 95%;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+               
+                
+                
+              }
+              .Hijo {
+                display: flex;
+                flex-direction: row;
+                              
+              }
+              
+             
+              #descripcion{
+                align="right";
+                /* color: #2667FF */
+                font-size: 1.5em;
+                font-family:"Latin Modern Roman";
+                text-align: justify;               
+                padding: 45px;
+                height: 200px;
+               
+              }
+              #foot{
+                color: #020024;
+                font-size: 1.6em;
+                text-align: center;
+                margin-bottom: 50px;
+              }
+          }
