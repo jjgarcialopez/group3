@@ -186,83 +186,46 @@ header {
         height:60px;
         padding:5px;
         columns: 3;
-        text-align: center;
-        
-        
-        
+        text-align: center;      
       }
-      /*Estilos para movil */
-      @media only screen and (max-width: 375px) {
-        body{
-          background-color: #479668;
-        }
-          h1{
-          text-align:center; 
-          font-size: 20px; 
-          text-shadow: 7px 4px 5px rgb(178, 178, 204);
-        }
-        #descripcion{
-          font-size: 20px;
-          font-weight:200;
-        }
-        .perfiles_desarrollo{
-          color: rgb(233, 223, 223);
-          text-align: center;
-          background-color:#449;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          margin-top:600px;
-          margin-left: 20px;
-          height: 80px;
-          width: 400px;
-          
-        }
-           
-            .padre {
-              margin-top: 20px;
-              height:100px;
-              background-color: #feb139;
-              display: flex;
-              margin: auto;
-              width: 95%;
-              flex-flow:column;
-              text-align: center;             
-              justify-content: space-between;
-              align-items: center;      
-              
-              
-            }
-            .padre h1{
-              font-size: 1.8em;
-              text-align: center;
-              margin-right: 7em;
-            }
-            .padre button{
-              display: inline-block;
-            }
-            .Hijo{
-              display: flex;
-              flex-direction: row;
-             
-              
-             
-            }
-            #hijo div{
-              width:60px;
-              height:60px;
-              padding:5px;
-              columns: 3;
-              text-align: center;
-            
-            }
-          }
-          /*HASTA AQUI ES PARA MOVIL*/
+      :root{
+        --fondo-textos:#449;
+        --color-letra:#fff;
+      }
+      /************************************************************/
+     
  /*Estilos para movil */
- @media only screen and (max-width: 375px) {
+ @media only screen and (max-width: 414px) {
   body{
+    margin: 0;
+    padding: 0;
     background-color: #479668;
+    width: 100%;
+  }
+  .padre {
+    margin-top: 20px;
+    height:100px;
+    background-color: #feb139;
+    display: flex;
+    margin: auto;
+    width: 95%;
+    flex-flow:column;
+    text-align: center;             
+    justify-content:center;
+    align-items: center; 
+    justify-items: center;  
+         
+   }
+  .padre h1{
+    font-size: 1.2em;
+    text-align: center;
+    margin-left: 150px;
+   
+    margin-right: 7em;
+  }
+  .padre button{
+    margin-bottom: 20px;
+   
   }
     h1{
     text-align:center; 
@@ -272,113 +235,95 @@ header {
   #descripcion{
     font-size: 20px;
     font-weight:200;
+    /* background-color:var(--fondo-textos); */
+    background-color: rgb(36, 153, 94);
+    color: var( --color-letra);
   }
   .perfiles_desarrollo{
-    color: rgb(233, 223, 223);
+    /* color: rgb(233, 223, 223); */
     text-align: center;
-    background-color:#449;
+    background-color:var(--fondo-textos);
+    color: var( --color-letra);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top:600px;
+    margin-top:550px;
     margin-left: 20px;
     height: 80px;
-    width: 400px;
+    width: 350px;
     
   }
-     
-      .padre {
-        margin-top: 20px;
-        height:100px;
-        background-color: #feb139;
-        display: flex;
-        margin: auto;
-        width: 95%;
-        flex-flow:column;
-        text-align: center;             
-        justify-content: space-between;
-        align-items: center;      
-        
-        
-      }
-      .padre h1{
-        font-size: 1.8em;
-        text-align: center;
-        margin-right: 7em;
-      }
-      .padre button{
-        display: inline-block;
-      }
-      .Hijo{
-        display: flex;
-        flex-direction: row;
-       
-        
-       
-      }
-      #hijo div{
-        width:60px;
-        height:60px;
-        padding:5px;
-        columns: 3;
-        text-align: center;
+  .mis-perfiles{
+    margin-top: 65%;
+    font-size:1em;
+    color: #fff;
+  }
+    
       
-      }
     }
     /*HASTA AQUI ES PARA MOVIL*/
+    /*Estilos para tablet*/
+    @media only screen and (max-width: 768px)  {
 
+    
+      header {
+        background: rgba(212, 183, 18, 0.7);
+        
+        }
+        header h1{
+          text-align: center;
+          margin-top: 10px;
+        }
+        section h1{
+          font-size: 3em;
+          text-align: center;
+        }
+        .padre {
+          margin-top: 20px;
+          height:100px;
+          background-color: #feb139;
+          display: flex;
+          margin: auto;
+          width: 99%;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-items: center;
+         
+          
+          
+        }
+        .Hijo {
+          display: flex;
+          flex-direction: row;
+                        
+        }
+        
+       
+        #descripcion{
+          align="right";
+          /* color: #2667FF */
+          font-size: 1.5em;
+          font-family:"Latin Modern Roman";
+          text-align: justify; 
+                        
+          padding: 45px;
+          height: 200px;
+         
+        }
+        .mis-perfiles{
+          font-size:1.5em;
+          color: #fff;
+        }
+        #foot{
+          color: #020024;
+          font-size: 1.6em;
+          text-align: center;
+          margin-bottom: 50px;
+        }
+    }
+    /*Hasta aqui son los estilos para tablet*/
 
-          /*Estilos para pc*/
-          @media only screen and (max-width: 3000px) {
-            header {
-              background: rgba(212, 183, 18, 0.7);
-              
-              }
-              header h1{
-                text-align: center;
-                margin-top: 10px;
-              }
-              section h1{
-                font-size: 3em;
-                text-align: center;
-              }
-              .padre {
-                margin-top: 20px;
-                height:100px;
-                background-color: #feb139;
-                display: flex;
-                margin: auto;
-                width: 95%;
-                flex-flow: row wrap;
-                justify-content: space-between;
-                align-items: center;
-               
-                
-                
-              }
-              .Hijo {
-                display: flex;
-                flex-direction: row;
-                              
-              }
-              
-             
-              #descripcion{
-                align="right";
-                /* color: #2667FF */
-                font-size: 1.5em;
-                font-family:"Latin Modern Roman";
-                text-align: justify;               
-                padding: 45px;
-                height: 200px;
-               
-              }
-              #foot{
-                color: #020024;
-                font-size: 1.6em;
-                text-align: center;
-                margin-bottom: 50px;
-              }
-          }
+          /*Aqui inician los Estilos para pc*/
+          
 /*Hasta aqui son los estilos para pc*/
