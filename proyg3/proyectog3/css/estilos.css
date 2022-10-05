@@ -1,5 +1,17 @@
 /*Aqui inician los estilos */
-
+.padre {
+  margin-top: 20px;
+  height:100px;
+  background-color: #feb139;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;      
+  
+  
+}
 
 header {
     background: rgba(212, 183, 18, 0.7);
@@ -247,8 +259,77 @@ header {
             }
           }
           /*HASTA AQUI ES PARA MOVIL*/
+ /*Estilos para movil */
+ @media only screen and (max-width: 375px) {
+  body{
+    background-color: #479668;
+  }
+    h1{
+    text-align:center; 
+    font-size: 20px; 
+    text-shadow: 7px 4px 5px rgb(178, 178, 204);
+  }
+  #descripcion{
+    font-size: 20px;
+    font-weight:200;
+  }
+  .perfiles_desarrollo{
+    color: rgb(233, 223, 223);
+    text-align: center;
+    background-color:#449;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:600px;
+    margin-left: 20px;
+    height: 80px;
+    width: 400px;
+    
+  }
+     
+      .padre {
+        margin-top: 20px;
+        height:100px;
+        background-color: #feb139;
+        display: flex;
+        margin: auto;
+        width: 95%;
+        flex-flow:column;
+        text-align: center;             
+        justify-content: space-between;
+        align-items: center;      
+        
+        
+      }
+      .padre h1{
+        font-size: 1.8em;
+        text-align: center;
+        margin-right: 7em;
+      }
+      .padre button{
+        display: inline-block;
+      }
+      .Hijo{
+        display: flex;
+        flex-direction: row;
+       
+        
+       
+      }
+      #hijo div{
+        width:60px;
+        height:60px;
+        padding:5px;
+        columns: 3;
+        text-align: center;
+      
+      }
+    }
+    /*HASTA AQUI ES PARA MOVIL*/
 
-          
+
+          /*Estilos para pc*/
           @media only screen and (max-width: 3000px) {
             header {
               background: rgba(212, 183, 18, 0.7);
@@ -300,3 +381,4 @@ header {
                 margin-bottom: 50px;
               }
           }
+/*Hasta aqui son los estilos para pc*/
