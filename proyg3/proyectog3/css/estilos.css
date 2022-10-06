@@ -52,7 +52,8 @@
         
       }
       .perfiles{
-        font-size: 2em;
+        
+        font-size: 15px;
       }
 /* Hasta aqui Estilos para la descripción del equipo*/   
 .cabecera{
@@ -118,7 +119,7 @@
         
       }
       .mis-perfiles{
-        font-size:3em;
+        font-size:10px;
         color: #fff;
       }
       div.perfiles {
