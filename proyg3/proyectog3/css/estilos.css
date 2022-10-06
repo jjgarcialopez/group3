@@ -307,7 +307,7 @@
         width: 98%;
         flex-flow: row;
         align-items: center;
-        margin-top:800px;
+        margin-top:400px;
         border-radius: 30px;        
         }
         #descripcion{
@@ -329,5 +329,71 @@
     /*Hasta aqui son los estilos para tablet*/
 
           /*Aqui inician los Estilos para pc*/
-          
+          @media only screen and (min-width:769px)  {
+            body{
+              margin: 0;
+              padding: 0;
+              background-color: #b6e995;
+              width: 100%;
+            } 
+            .topMenu {
+              width: 90%;
+              font-family: 'Yanone Kaffeesatz', sans-serif;
+              list-style-type: none;
+              background-color: var(--color-fondo-titulo);
+              overflow: hidden;
+              height: 150px;
+              display: inline-flex; /* Para hacer que el elemento tan solo ocupe lo que sus hijos marque */
+              border-radius: 30px;
+              align-items: center; /* Para alinear items flexibles respecto al eje secundario */
+              justify-content: space-between;
+              width:100%;
+            }
+            
+            .topMenu p {
+              font-size: 1.5em;
+              color: darkblue;
+              font-weight: bold;
+              margin-top: 0;
+              margin-bottom: 0;
+            }
+            
+            .topMenu button {
+              border-radius: 8px;
+              border-color: black;
+              background-color: rgb(195, 216, 255);
+              text-decoration: black;
+              font-size: 1em;
+              height: 50px;
+              width: 15em;
+              margin-right: 40px;
+            }
+            .equipo{
+              margin-top: 12px;
+              height:100px;
+              background-color:var(--color-fondo-titulo);
+              display: flex;
+              margin: auto;
+              width: 98%;
+              flex-flow: row;
+              align-items: center;
+              margin-top:400px;
+              border-radius: 30px;        
+              }
+              #descripcion{
+                
+                font-size: 2em;
+                font-family:"Latin Modern Roman";
+                text-align: justify;       
+                padding: 45px;
+                height: 200px;      
+              }
+              div.perfiles {
+                width: 95%;
+                margin: 20px auto;
+                background-color: #449;
+                color: #fff;
+                padding: 60px;
+              }
+          }
 /*Hasta aqui son los estilos para pc*/
