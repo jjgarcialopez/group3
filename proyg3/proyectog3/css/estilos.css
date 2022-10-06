@@ -1,6 +1,6 @@
 /*Aqui inician los estilos */
 :root{
-  --color-fondo-titulo:rgb(115, 182, 115);
+  --color-fondo-titulo:rgb(87, 177, 87);
 }
 /*Estilos para el header y los botones de navegación*/
 .topMenu {
@@ -41,17 +41,19 @@
     section h1{
       text-align: center;
       margin-top: 70px;
-      font-size: 3em;      
+      font-size: 60px;      
     }
 /*Estilos para la descripción del equipo*/   
       #descripcion{
-        align="right";
-        /* color: #2667FF */
-        font-size: 40px;
+        font-size: 45px;
         font-family:"Latin Modern Roman";
         text-align: justify;       
         padding: 45px;
-        height: 200px;      
+        
+      }
+      .perfiles{
+        
+        font-size: 15px;
       }
 /* Hasta aqui Estilos para la descripción del equipo*/   
 .cabecera{
@@ -85,8 +87,12 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top:200px;
+  margin-top:75px;
   border-radius: 30px;
+}
+.equipo h2{
+  font-weight: bold;
+  font-size: 3em;
 }
 /*Estilos para la descripcion de cada desarrollador*/
       .perfiles_desarrollo{
@@ -103,6 +109,9 @@
         margin-left: 5%;
         
       }
+      .names{
+        font-size:3em;
+      }
       img.mediana{
         width: 200px;
         height: 180px;
@@ -110,7 +119,7 @@
         
       }
       .mis-perfiles{
-        font-size:2em;
+        font-size: 45px;
         color: #fff;
       }
       div.perfiles {
@@ -155,15 +164,17 @@
         --color-letra:#fff;
       }
       /************************************************************/
-     
+                        /* MEDIA QUERIES*/
+    /************************************************************/
  /*Estilos para movil */
  @media only screen and (max-width: 414px) {
   body{
     margin: 0;
     padding: 0;
-    background-color: #97939c;
+    background-color: #d2ced8;
     width: 100%;
   } 
+  /*Estilos para el menu de navegación*/
   .topMenu {
     width: 90%;
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -196,37 +207,34 @@
     width: 15em;
     margin-right: 40px;
   }
+  /*Hasta aqui estilos menú navegación*/
+  /*Estilos de la descripción del equipo*/
   .equipo{
-    margin-top: 12px;
-    height:100px;
-    background-color:var(--color-fondo-titulo);
-    display: flex;
-    margin: auto;
+    background-color:var(--color-fondo-titulo);   
     width: 98%;
-    flex-flow: row wrap;
-    justify-content: space-between;
     align-items: center;
-    margin-top:950px;
-    border-radius: 30px;        
+    margin-top:50px;
+    border-radius: 30px;  
+    font-size: 9px;      
     }
     #descripcion{
-          
-      font-size: 2em;
+      
+      font-size: 26px;
       font-family:"Latin Modern Roman";
       text-align: justify;       
       padding: 45px;
-      height: 200px;      
+           
     }
-  }
-  img.mediana{
-    width: 200px;
-    height: 180px;
-    border: solid 1px;
-    
-  }
+  
+ 
   .mis-perfiles{
-    font-size:2.2em;
+    margin-top: 200px;
+    font-size:22px;
     color: #fff;
+  }
+  .perfiles{
+    height: auto;
+   
   }
   div.perfiles {
     width: 90%;
@@ -250,24 +258,26 @@
     clear: both;
   }
   .names{
+    padding: 40px;
     color: rgb(13, 13, 15);
     text-align: center;
     text-align:center; font-size: 1.9em; text-shadow: 7px 4px 5px rgb(178, 178, 204);
   }
-  
+}
   
     /*HASTA AQUI ES PARA MOVIL*/
 
-    /*Estilos para tablet*/
-    @media only screen and (min-width:415px) and (max-width: 768px)  {
+    /* Aqui empieza Estilos para tablet*/
+    @media only screen and (min-width:480px) and (max-width: 960px)  {
       body{
         margin: 0;
         padding: 0;
-        background-color: #d8ec23;
+        background-color: #c9e1f7;
         width: 100%;
       } 
+      /*Estilos para el menu de navegación*/
       .topMenu {
-        width: 90%;
+        width: 100%;
         font-family: 'Yanone Kaffeesatz', sans-serif;
         list-style-type: none;
         background-color: var(--color-fondo-titulo);
@@ -295,39 +305,143 @@
         text-decoration: black;
         font-size: 1em;
         height: 50px;
-        width: 15em;
-        margin-right: 40px;
+        width: 100%;
+        margin-right: 90px;
+        padding: 20px;
       }
+      .topMenu p{
+        text-align: center;
+        margin-left:20px;
+      }
+      .topMenu__botones{
+        margin-right: 5%;
+        margin-left: 5%;
+      }
+      /*Hasta aqui estilos menú navegación*/
+      /*Estilos de la descripción del equipo*/
       .equipo{
-        margin-top: 12px;
-        height:100px;
-        background-color:var(--color-fondo-titulo);
-        display: flex;
-        margin: auto;
+        background-color:var(--color-fondo-titulo);   
         width: 98%;
-        flex-flow: row;
         align-items: center;
-        margin-top:800px;
-        border-radius: 30px;        
+        margin-top:50px;
+        border-radius: 30px;  
+        font-size: 9px;      
         }
         #descripcion{
           
-          font-size: 2em;
+          font-size: 26px;
           font-family:"Latin Modern Roman";
           text-align: justify;       
           padding: 45px;
-          height: 200px;      
+               
         }
-        div.perfiles {
-          width: 95%;
-          margin: 20px auto;
-          background-color: #449;
-          color: #fff;
-          padding: 60px;
-        }
+      
+     
+      .mis-perfiles{
+        margin-top: 200px;
+        font-size:22px;
+        color: #fff;
+      }
+      .perfiles{
+        height: auto;
+       
+      }
+      div.perfiles {
+        width: 90%;
+        margin: 20px auto;
+        background-color: #449;
+        color: #fff;
+        padding: 15px;
+      }
+      
+      
+      
+      div.perfiles img.derecha {
+        width: 200px;
+        height: 250px;
+        float: left;
+        padding: 25px;
+        border-radius: 50%;        
+      }
+        
+      div.reset {
+        clear: both;
+      }
+      .names{
+        padding: 40px;
+        color: rgb(13, 13, 15);
+        text-align: center;
+        text-align:center; font-size: 1.9em; text-shadow: 7px 4px 5px rgb(178, 178, 204);
+      }
     }
     /*Hasta aqui son los estilos para tablet*/
 
-          /*Aqui inician los Estilos para pc*/
-          
+  /*Aqui inician los Estilos para pc*/
+          @media only screen and (min-width:769px) and (max-width: 2000px) {
+            body{
+              margin: 0;
+              padding: 0;
+              background-color: #b6e995;
+              width: 100%;
+            } 
+            .topMenu {
+              width: 90%;
+              font-family: 'Yanone Kaffeesatz', sans-serif;
+              list-style-type: none;
+              background-color: var(--color-fondo-titulo);
+              overflow: hidden;
+              height: 150px;
+              display: inline-flex; /* Para hacer que el elemento tan solo ocupe lo que sus hijos marque */
+              border-radius: 30px;
+              align-items: center; /* Para alinear items flexibles respecto al eje secundario */
+              justify-content: space-between;
+              width:100%;
+            }
+            
+            .topMenu p {
+              font-size: 1.5em;
+              color: darkblue;
+              font-weight: bold;
+              margin-top: 0;
+              margin-bottom: 0;
+            }
+            
+            .topMenu button {
+              border-radius: 8px;
+              border-color: black;
+              background-color: rgb(195, 216, 255);
+              text-decoration: black;
+              font-size: 1em;
+              height: 50px;
+              width: 15em;
+              margin-right: 40px;
+            }
+            .equipo{
+              margin-top: 12px;
+              height:100px;
+              background-color:var(--color-fondo-titulo);
+              display: flex;
+              margin: auto;
+              width: 98%;
+              flex-flow: row;
+              align-items: center;
+              margin-top:400px;
+              border-radius: 30px;        
+              }
+              #descripcion{
+                
+                font-size: 2em;
+                font-family:"Latin Modern Roman";
+                text-align: justify;       
+                padding: 45px;
+                height: 200px;      
+              }
+              div.perfiles {
+                width: 95%;
+                margin: 20px auto;
+                background-color: #449;
+                color: #fff;
+                padding: 60px;
+              }
+          }
 /*Hasta aqui son los estilos para pc*/
