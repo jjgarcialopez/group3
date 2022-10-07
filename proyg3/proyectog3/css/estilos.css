@@ -23,7 +23,7 @@
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 200px;
+  margin-left: 20px;
 }
 
 .topMenu button {
@@ -188,6 +188,7 @@
     align-items: center; /* Para alinear items flexibles respecto al eje secundario */
     justify-content: space-between;
     width:100%;
+    
   }
   
   .topMenu p {
@@ -308,7 +309,7 @@
         font-size: 1em;
         height: 50px;
         width: 100%;
-        margin-right: 90px;
+        margin-right:60px;
         padding: 20px;
       
       }
