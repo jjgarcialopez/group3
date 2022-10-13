@@ -1,0 +1,112 @@
+/*Estilo para el body*/
+.body{
+  margin: 0;
+  padding: 0;
+  background: lightyellow;
+  
+}
+/*Estilos para el header y los botones de navegación*/
+.topMenu {
+  width: 90%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  list-style-type: none;
+  background-color: var(--color-fondo-titulo);
+  overflow: hidden;
+  height: 150px;
+  display: inline-flex; /* Para hacer que el elemento tan solo ocupe lo que sus hijos marque */
+  border-radius: 30px;
+  align-items: center; /* Para alinear items flexibles respecto al eje secundario */
+  justify-content: space-between;
+  width:100%;
+}
+
+.topMenu p {
+  font-size: 50px;
+  color: darkblue;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.topMenu button {
+  border-radius: 8px;
+  border-color: black;
+  background-color: rgb(195, 216, 255);
+  text-decoration: black;
+  font-size: 17px;
+  height: 90px;
+  width: 500px;
+  margin-right: 40px;
+}
+/*Hasta aqui son los estilos de los botones*/
+/*Estilo para el titulo principal*/
+
+#subtitle{
+  text-align: center;
+}
+  div.gallery {
+    margin: auto;
+    border: 10px solid #ccc;
+    justify-content: center;
+    width:400px;
+    float: left;
+    margin-left: 42px;
+  }
+  /*Estilo de la imagen de la portada o página inicial del proyecto*/
+  .gallery-port{
+    
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #ccc;
+    padding:10px;
+    
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 400px;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(212, 183, 18, 0.7);
+  }
+  body{
+    background-color: rgb(225, 220, 230);
+    background-image:url("/proyg3/proyectog3/img/icons/fondo.jpg");
+  }
+  #rs { 
+    display: block;
+    /* margin-top: 0.67em; */
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size:40px;
+    
+  
+  }
+  #menu{
+    display: block;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size:40px;
+    color:rgb(206, 33, 33);
+  }
+  h1{
+    font-family:helvetica;
+    font-size: 80px;
+    
+  }
+  button{
+    border-radius:20px;
+    background: #479668;
+    width: 350px;
+  }
+    
